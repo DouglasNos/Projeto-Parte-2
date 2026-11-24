@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pet Shop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <div id="capa">
+      <img src="foto.jpg" alt="foto de capa" width="400" height="400"/>
+    </div>  
+  </head>
+  <body>
+    <style>
+      .lista-colunas1 {
+        column-count: 2; /* Define a quantidade de colunas */
+        column-gap: 20px; /* Espaço entre as colunas */
+        margin-left: 160px
+      }
+    </style>
+    <style>
+      .lista-colunas2 {
+        column-count: 3; /* Define a quantidade de colunas */
+        column-gap: 20px; /* Espaço entre as colunas */
+      }
+    </style>
+    <nav>
+      <!-- Botões de Navegação -->
+      <button style = "width: 200px; height: 50px; font-size: 18px" onclick="rolarPara('#menu')">Menu</button>
+      <button style = "width: 200px; height: 50px; font-size: 18px" onclick="rolarPara('#produtos')">Produtos</button>
+      <button style = "width: 200px; height: 50px; font-size: 18px" onclick="rolarPara('#serviços')">Serviços</button>
+      <button style = "width: 200px; height: 50px; font-size: 18px" onclick="rolarPara('#contato')">Contato</button>
+    </nav>
+    <main>
+      <!-- Seções da Página -->
+      <div id="menu" style="background: (249, 227, 190);">
+        <h2>Menu</h2>
+          <p>Localização: Av Assis Brasil 1500 </p>
+          <p>Horário de funcionamento: 8h às 18h </p>
+          <p>
+            Clique aqui para fazer o seu <a href=formulario.html>cadastro</a>.
+            <a href="https://formsubmit.co/el/petshop@gmail.com" target="_blank"><a>
+          </p>
+      </div>
+      <div id="produtos" style="background: rgb (249, 227, 190);">
+        <h2>Produtos</h2>
+      </div>
+      <p><b>Acessórios</b></p>
+      <ul type="I" class="lista-colunas1">
+        <li> Roupa</li>
+        <p>Tamanho M</p>
+        <p>Valor: 10,00 reais</p>
+        <img alt = "roupas de cachorro" src="roupa.jpg" width="400" height="400">
+        
+        <li> Brinquedos</li>
+        <p>Para cachorros pequenos, médios e grandes</p>
+        <p>Valor: 5,00 reais</p>
+        <img alt = "brinquedos de cachorro" src="brinquedos.jpg" width="400" height="400">
+      </ul>
+
+      <p><b>Rações</b></p>
+      <ul type="I" class="lista-colunas2">
+        <li> Filhote</li>
+        <p>Ambientes Internos</p>
+        <p>Valor: 100,00 reais</p>
+        <img src="ração filhote.jpg" width="400" height="400">
+
+
+        <li> Adulto</li>
+        <p>Ambientes Internos</p>
+        <p>Valor: 100,00 reais</p>
+        <img src="ração adulto.jpg" width="400" height="400">
+
+
+        <li> Senior</li>
+        <p>Ambientes Internos</p>
+        <p>Valor: 100,00 reais</p>
+        <img src="ração senior.jpg" width="400" height="400">
+
+
+      </ul>  
+      <p><b>Higiene e Limpeza</b></p>
+      <ul type="I" class="lista-colunas1">
+        <li> Fraldas</li>
+        <p>Todos os tamanhos</p>
+        <p>Valor: 50,00 reais</p>
+        <img src="fraldas.jpg" width="300" height="300">
+
+        <li> Tapetes</li>
+        <p>Descartaveis</p>
+        <p>Valor: 25,00 reais</p>
+        <img src="tapete.jpg" width="300" height="300">
+
+      </ul>  
+    </nav>    
+    <div id="serviços" style="background: (249, 227, 190);">
+        <h2>Serviços</h2>
+    </div>
+      <ul type="I">
+        <li> Banho</li>
+        <p>Higienização do animal.</p>
+        <p>Valor: 50,00 reias</p>
+        <li> Tosa</li>
+        <p>Corte do pelo do animal</p>
+        <p>Valor: 25,00 reais</p>
+      </ul>
+
+      <p>
+        Clique aqui para fazer o seu <a href=agendamento.html>agendamento</a>.
+        <a href="https://formsubmit.co/el/petshop@gmail.com" target="_blank"><a>
+      </p>
+        
+    </main>
+  </body>
+
+  <footer>
+    <div id="contato" style="background: (249, 227, 190);">
+      <h2> Contato</h2>
+    </div>
+    <div> 
+      <p> Contato: (051) 99999-9999</p>
+      <a href= "mailto:petshop@gmail.com">Entre em contato por e-mail!</a>
+    </div>
+  </footer>
+</html>
+
+<script>
+function rolarPara(id) {
+    const elemento = document.querySelector(id);
+    elemento.scrollIntoView({ behavior: 'smooth' }); // O 'smooth' faz o efeito de rolagem suave
+}
+</script>
